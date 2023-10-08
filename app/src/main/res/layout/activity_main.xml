@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="60dp"
+        android:text="Cadastrar"
+        app:layout_constraintStart_toStartOf="@+id/editSexo"
+        app:layout_constraintTop_toBottomOf="@+id/editSexo" />
+
+    <EditText
+        android:id="@+id/editSexo"
+        android:layout_width="229dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="277dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Sexo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editAno"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginBottom="377dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMes"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <EditText
+        android:id="@+id/editMes"
+        android:layout_width="246dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginBottom="287dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Mês"
+        app:layout_constraintBottom_toTopOf="@+id/textResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="229dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/editMes"
+        app:layout_constraintEnd_toEndOf="@+id/editMes" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="231dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="62dp"
+        android:text="TextView"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
